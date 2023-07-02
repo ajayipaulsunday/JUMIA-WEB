@@ -1,0 +1,78 @@
+
+@media(max-width:600px){ 
+    #changebackgroundcolour{
+        background-color: white !important;
+        /* margin-top: -50px !important; */
+    }   
+    .carting-5{
+        /* border: 2px solid red !important; */
+        min-width: 120% !important;
+    }
+    .carts{
+        min-height: 200px !important;
+    }
+    .carting-1{
+        /* border: 2px solid red !important; */
+        min-width: 180px !important;
+        margin-left: 60px !important;
+        /* text-align: end; */
+    }
+    .carting-2{
+        /* color: red !important; */
+        text-align: left;
+    }
+    .carting-3{
+       min-width: 70% !important;
+    }
+    .carting-4{
+        /* border: 1px solid  red !important; */
+        width: 120px !important ;
+        margin-left: 200px !important;
+    }
+    .img-div{
+        width: 90% !important;
+        margin-left: 15px;
+        border: none;
+    }
+     .button{
+        /* border: 2px solid  red !important; */
+        width: 100% !important;
+    } 
+    .carting{
+        position: relative !important;
+        top: 110px !important;
+        left: -200px;
+    }
+    .product-div{
+        width: 100% !important;
+        border: none !important;
+    }  
+   
+    .Delivary{
+        height: 500px !important;
+        /* border: 2px solid red !important; */
+        width: 100% !important;
+    }
+   
+    .carts{
+        width: 100% !important;
+        margin-left: -20px !important; 
+    }
+    .input{
+        width: 100% !important;
+    }
+    .cart{
+    margin-left: -40px;
+    }
+    .items{
+        margin-left: 62%;
+        width: 37%;
+    } 
+    #item{
+        /* border: 2px solid red !important; */
+        margin-top: -320px !important;
+    }
+    
+   
+   
+}

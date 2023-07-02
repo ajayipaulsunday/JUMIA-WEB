@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        .img{
+            height: 100%;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Responsive.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/css/all.css">
+  
+    <!-- <link rel="stylesheet" href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.css"> -->
+</head>
+<body onload="displayCart()" class="bg-secondary bg-opacity-10">
+    <section>
+        <div class="bg-secondary bg-opacity-10 d-flex w-100" style="height: 50px;" >
+            <div class=" d-flex  w-100 pt-1"> 
+                <ul  class=" gap-1 gap-lg-2 d-flex w-100  justify-content-center" style="           text-decoration: none; list-style: none; ;">
+                    <p class="w-25 d-none d-lg-block"><a   class="text-decoration-none text-warning" href="">Sell On Jumia</a></p>
+                    <a href="#" class="p text-decoration-none d-block d-lg-none text-warning" >Sell On Jumia</a>
+                    <img  class="mt-2" height="30px" src="./Foto/download-removebg-preview.png" alt="">
+                    <li class="text-decoration-none"> <h3 ><a class="fs-6 fw-bold mt-1 text-decoration-none" href="">PAY</a></h3> </li>
+                    <li><h3 class=""> <a class="text-decoration-none fs-6 fw-bold mt-1 " href="">FOOD</a> </h3></li>
+                    <li><h3 class=""> <a class="text-decoration-none fs-6 fw-bold mt-1" href="">PARTY</a> <h3></li>
+                    <li><h3 class=""> <a class="text-decoration-none fs-6 fw-bold mt-1" href="">LOGISTIC</a> </h3></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <nav class="navbar bg-white h-auto" style="margin-top: -10px; position: sticky; top: -7px; z-index: 2px;" >
+        <div class="container justify-content-center">
+          <div class="d-flex w-75 justify-content-center">
+                 <img style="height: 50px;" src="./Foto/download-removebg-preview.png" alt="">
+ 
+             <form class="d-flex w-75 ms-5 gap-md-2" role="search" style=" height: 50px;">
+                 <!-- <input class="round-5 w-100" type="text"> -->  
+                 <input class="form-control me-2 w-100 d-none d-md-block" type="search" placeholder="Search product, brand and  categories" aria-label="Search">
+                 <button class="btn btn-outline w-25 round-sm-5 d-none d-lg-block bg-warning" type="submit">Search</button>
+             </form>
+             <ul class=" me-auto mb-2 mb-lg-0 ms-2 mt-2" style="list-style-type: none;">
+               <a href="Register.html">
+                 <i class="fa-solid fa-user d-block d-lg-none"></i>
+               </a>
+               <li class="nav-item dropdown d-none d-lg-block">
+                         <a class="nav-link dropdown-toggle text-black d-flex position" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true" style="margin-top: 2px;">
+                           <i class="fa-solid fa-user  ms-1 me-1"></i>  <span class=" p" style="margin-top: -7px;">Hi,</span>
+                           <span class="ms-2 me-2 p" id="display" style="margin-top: -7px;"></span>
+                         </a>
+                     <ul class="dropdown-menu p-2 mt-3" 
+                         <li><a class="dropdown-item" href="#"></a></li>
+                         <li><hr class="dropdown-divider"></li>
+                         <li><a class="dropdown-item" href="#">My Account</a></li>
+                         <li><a class="dropdown-item" href="#">Orders</a></li>
+                         <li><a class="dropdown-item" href="#">Saved Items</a></li>
+                        <a href="sign-in.html" class="text-decoration-none text-black">
+                            <button class="btn btn-outline w-100 bg-warning" type="submit">Sign-Out</button>
+                        </a>
+                     </ul>
+              
+               </li>
+             </ul>
+             <ul class="navbar-nv me-auto mb- mb-lg-0 ms-2 d-none d-md-block mt-1" style="list-style-type: none;">
+               <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                  Help
+                 </a>
+                 <ul class="dropdown-menu p-2 m-2 m-2 border-danger">
+                     <li><a class="dropdown-item" href="#">Help Center</a></li>
+                     <li><a class="dropdown-item" href="#"></a></li>
+                     <li><a class="dropdown-item" href="#">Place and Track Order</a></li>
+                     <li><a class="dropdown-item" href="#">Order Cancellation</a></li>
+                     <li><a class="dropdown-item" href="#">Return & Refund</a></li>
+                     <li><a class="dropdown-item" href="#">Payment & Jumia Account</a></li>
+                     <li><a class="dropdown-item" href="#">Contact US</a></li>
+                     <li><hr class="dropdown-divider"></li>
+                     <button class="btn btn-outline w-100" type="submit" style="background-color: orange;">Live Chart</button>
+                 </ul>
+               </li>
+             </ul>
+             <ul class="navbar-nv me-auto mb- mb-lg-0 ms-2 d-none d-md-block mt-2" style="list-style-type: none; width: 100px;">
+               <li class="nav-item dropdown ">
+                   <p class="d-flex">
+                    <a style="color: black;" href="cart.html">
+                      <span style="margin-top: -4px;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash" viewBox="0 0 16 16">
+                        <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z"/>
+                        <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                      </svg></span>
+                    </a>
+                    <a  class="text-decoration-none text-black ms-1" href="cart.html" style="margin: top -4px; ;">Cart</a>
+                    <a id="counter"  class="text-decoration-none text-black ms-1" href="cart.html" style="margin: top -4px; ;"></a>
+                    <!-- <p id="counter"></p> -->
+                 </a>
+                
+               </li>
+             </ul>
+           </div>
+       </div>
+      </div>
+    </nav>
+    <!-- <div style="bord"> -->
+      <div >
+
+      </div>
+
+    </div>
+    <section class="container mt-3">
+         <div class=" w-70 h-auto row carts">
+              <div class="d-flex flex-wrap ">
+                <div class=" bg-white rounded-3 h-auto col col-lg-8 col-md-12 col-sm-12  ms-2 carting-5">
+                  <div class="d-flex">
+                      <p class="fw-bold text-secondary ms-2 fs-5 ">Cart</p>
+                      <p class="fw-bold text-secondary ms-2 fs-5" id="totalNumber"></p>
+                  </div>
+                  <hr style="margin-top: -10px;">
+      
+                      <div class=" h-auto" id="cartItemDiv">
+                          
+                      </div>   
+              </div>
+              <div class=" col col-lg-3 col-md-12 rounded-3 ms-5 " style="height: 100px;">
+                <p class="fw-bold">CART SUMMARY</p>
+                <hr>
+                <div class="d.flex">
+                  <p>Subtotal</p>
+                  <p id="Subtotal"></p>
+                </div>
+              </div>
+            </div>
+         </div>
+         
+         <div >
+         </div>
+
+       
+     
+    
+      </section>
+ 
+
+    <script>
+        // let cart =JSON.parse(localStorage.getItem("cartItems"))
+        
+        let allAccount = JSON.parse(localStorage.getItem("Details"))
+        // console.log(allAccount);
+        display.innerHTML =`
+        <p>${allAccount.FirtName}</p>
+        `
+        
+        if(localStorage.allAccount){
+            allAccount = JSON.parse(localStorage.getItem("Cart"))}
+            console.log(allAccount);
+
+            function displayCart (){
+              let cartItems =JSON.parse(localStorage.getItem("cartItems"))
+              let account = JSON.parse(localStorage.getItem("Details"))     
+              
+               let userItem =  cartItems.filter((item, index, array)=> item.email == account.Email)
+              
+              //  console.log(user);
+              // let userItem =  cartItems.filter((item, index, array)=> item.email == account.Email)
+              // console.log(userItem);
+              
+              for (let index = 0; index < userItem.length; index++) {
+                counter.innerHTML = userItem.length
+                totalNumber.innerHTML = userItem.length
+              }
+              if (userItem){
+                  userItem.map((item, index)=>{
+                    console.log(item )
+                    cartItemDiv.innerHTML +=`
+            <div class="carts " >
+                <div class="cart ms-0">
+                    <div class="d-flex bg-white mx-5 mt-4">
+                    <div  class="ms-3" style=" height: 100px; width: 100px;">
+                    <img src=${item.myImg} id="cartImage" alt="" class="img">
+                </div>
+                <div class="w-75 flex-wrap  ms-2 carting-1" style=" height: 100px;">
+                    <p class="ms-3" id="itemName">${item.productName}</p>
+                    <p 
+                      class="ms-3 d-block d-sm-none " style="margin-top: -15px; font-size: 10px;">Size: One Size  fits all
+                    </p>
+                    <p
+                      class="ms-3  d-none carting-2 d-sm-block" style="margin-top: -15px; font-size: 10px;">Size: One Size  fits all
+                    </p>
+                </div> 
+                <div class="w-25 ms-5 ps-3 carting" style=" height: 100px;">
+                   <p class="fw-bold fs-3 " id="itemPrice">${item.price}</p> 
+                   <p id="beforeItems" style="margin-top: -25px; text-decoration: line-through;">${item.beforePrice}</p> 
+                </div>
+
+                </div>                 
+                </div>
+                 <div  class="p-2   ms-5 w-80 mt-5 mb-5">
+                    <span onclick ="delteItem(${index})" style="position: relative; top: 20px;">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                         <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z"/>
+                       <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z"/>
+                       </svg>
+                       </span>
+                     <span>
+                
+                     <div class='carting-4' style="margin-left:75%;">
+                       <span >
+                         <div>  
+                            <span onclick="minus(item${index--}Quantity)"  class=" p-2 rounded-2 me-3" style="background-color: orange; height: 35px; ">
+                                 <svg style="color: white;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                                 <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z"/>
+                                 </svg>
+                             </span>
+                             <span id="item${index+1}Quantity">1</span>
+                               <span onclick="plus(item${index+1}Quantity) "   class="p- rounded-2 me-3" style="background-color: orange; height: 35px; padding: 10px;">
+                              <i class="fa-solid fa-plus" style="color: white;"></i>
+                              <i class="bi bi-dash"></i>
+                              </span>
+                            </div>
+                         </span>
+                       <span>
+                 </div>
+                <hr>
+            </div>
+                <p id="concatination"></p>
+                `
+            })
+          }
+        } 
+        let cartItems =JSON.parse(localStorage.getItem("cartItems"))
+        const delteItem  = (index)=>{
+          let userItems =JSON.parse(localStorage.getItem("cartItems"))
+          // alert(index)
+          let deleteConfirmation = confirm("Are you  sur you want yo delete")
+          if(deleteConfirmation){
+            // if(index => 0 && index <cartItems.length){
+              cartItems.splice(index, 1)
+              localStorage.setItem("cartItems", JSON.stringify(cartItems));
+              console.log("Item delte succefully");
+            // }else{
+            //   console.log("Invalid index.");
+            // }
+          }else{
+            console.log("Deletion canceled.");
+          }
+          window.location.href ="cart.html"
+        }
+        const plus = (itemQuantity)=>{
+            itemQuantity.innerText ++  
+        }
+        let items = document.getElementById("item")
+        const minus= (itemQuantity)=>{
+          itemQuantity.innerText --  
+        }
+
+      
+
+     
+
+
+      
+    
+  
+    </script>
+
+
+  
+</body>
+</html>
