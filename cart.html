@@ -44,7 +44,7 @@
                  <button class="btn btn-outline w-25 round-sm-5 d-none d-lg-block bg-warning" type="submit">Search</button>
              </form>
              <ul class=" me-auto mb-2 mb-lg-0 ms-2 mt-2" style="list-style-type: none;">
-               <a href="Register.html">
+               <a href="Registers.html">
                  <i class="fa-solid fa-user d-block d-lg-none"></i>
                </a>
                <li class="nav-item dropdown d-none d-lg-block">
@@ -235,13 +235,13 @@
           // alert(index)
           let deleteConfirmation = confirm("Are you  sur you want yo delete")
           if(deleteConfirmation){
-            // if(index => 0 && index <cartItems.length){
+            if(index => 0 && index <cartItems.length){
               cartItems.splice(index, 1)
               localStorage.setItem("cartItems", JSON.stringify(cartItems));
               console.log("Item delte succefully");
-            // }else{
-            //   console.log("Invalid index.");
-            // }
+            }else{
+              console.log("Invalid index.");
+            }
           }else{
             console.log("Deletion canceled.");
           }

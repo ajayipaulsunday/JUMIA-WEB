@@ -8,14 +8,13 @@
   <title>Document</title>
   <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/css/solid.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./Responsive.css">
-  <!-- <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/css/solid.css"> -->
+  <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/css/solid.css">
   <script src="./fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/js/all.js"></script>
-  <!-- <link rel="stylesheet" href=""> -->
 
 
 
@@ -57,6 +56,7 @@
   </style>
 
 </head>
+
 <body onload="displayCart()">
 
   <header>
@@ -100,41 +100,30 @@
             placeholder="Search product, brand and  categories" aria-label="Search">
           <button class="btn btn-outline w-25 round-sm-5 d-none d-lg-block bg-warning" type="submit">Search</button>
         </form>
-        <ul class=" me-auto mb-2 mb-lg-0 ms-2 mt-2 d-flex gap-2" style="list-style-type: none;">
-           <a href="sign-in.html">
-             <i class="fa-solid fa-user d-block d-lg-none"></i>
-           </a>
-           <a href="cart.html">
-            <span class="hovers d-block d-md-none" style="margin-top: -10px; position: relative; left: 25px;"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-              class="bi bi-cart-dash" viewBox="0 0 16 16">
-              <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
-              <path
-              d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-            </svg></span>
-            <span class="d-block d-md-none text-primary" id="showCart" style="position: relative; left: 45px;  top: -20px;"></p></span>
-           </a>
+        <ul class=" me-auto mb-2 mb-lg-0 ms-2 mt-2" style="list-style-type: none;">
+          <a href="Register.html">
+            <i class="fa-solid fa-user d-block d-lg-none"></i>
+          </a>
           <li class="nav-item dropdown d-none d-lg-block">
             <a class="nav-link dropdown-toggle text-black d-flex" href="#" role="button" data-bs-toggle="dropdown"
               aria-expanded="true" style=" margin-top: 10px;">
               <i class="fa-solid fa-user  ms-1 me-1 " style="color: blue;"></i> <span class=" p"
-                style="margin-top: -7px;">Hi,</span>
+                style="margin-top: -7px;">Account</span>
               <span class="ms-2 me-2 p" id="display" style="margin-top: -7px; text-transform: capitalize;"></span>
 
             </a>
             <ul class="dropdown-menu p-2 mt-3">
-              <a href="Registers.html" class="text-decoration-none text-black">
+              <a href="Register.html" class="text-decoration-none text-black">
               </a>
               <li><a class="dropdown-item" href="#"></a></li>
+              <a href="sign-in.html"> <button class="btn btn-outline w-100 bg-warning" type="submit">Sign In</button></a>
               <li>
                 <hr class="dropdown-divider">
               </li>
               <li><a class="dropdown-item" href="#">My Account</a></li>
               <li><a class="dropdown-item" href="#">Orders</a></li>
               <li><a class="dropdown-item" href="#">Saved Items</a></li>
-              <a href="sign-in.html">
-              <button class="btn btn-outline w-100 bg-warning" onclick="LogOut()" type="submit">Log Out</button>
-
-              </a>
+              <!-- <button class="btn btn-outline w-100 bg-warning" onclick="LogOut()" type="submit">Log Out</button> -->
             </ul>
 
           </li>
@@ -162,14 +151,14 @@
         </ul>
         <ul class="navbar-nv me-auto mb- mb-lg-0 ms-2 d-none d-md-block mt-2 hovers" style="list-style-type: none;">
           <li class="nav-item dropdown d-flex  border border-danger">
-            <a class="border border-danger hovers" style="color: black;" href="cart.html">
+            <a class="border border-danger hovers" style="color: black;" href="sign-in.html">
               <span class="hovers"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-cart-dash" viewBox="0 0 16 16">
                 <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
                 <path
                 d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
               </svg></span>
-              <a class="text-decoration-none text-black d-none d-lg-block ms-3 hovers" id="itemsInCart" href="cart.html"
+              <a class="text-decoration-none text-black d-none d-lg-block ms-3 hovers" id="itemsInCart" href="sign-in.html"
                 style="margin: top -4px;;">Cart</a></p>
                 <p class="hovers ms-1  h-auto pe-1 ps-1" id="counter" style="background-color: orange; border-radius: 10px; color: white; position: relative; right: 55px; top: -5px; height: 15px; "></p>
             </a>
@@ -273,7 +262,7 @@
     </div>
     <div class="d-lg-flex container">
       <div class=" d-lg-flex bg-white  w-100 rounded-2 container mt-3" id="working">
-        <div class="mt-2   justify-content-center d-sm-container img-div me-2 "
+        <div class="mt-2 border border-danger  justify-content-center d-sm-container img-div me-2 "
           style=" height: 280px ; ">
           <img id="img" src="" alt="" width="90% " class="img ms-2">
           <div class="p ps-4">
@@ -289,46 +278,26 @@
           </p>
           <p class="shipping" style="font-size: 10px; ">+shipping from #210 to LEKKI-AJAH(SANGOTEDO)</p>
           <hr class="border-secondary d-none d-lg-block">
-          <div class="w-100 bg-white addToCart-div h-auto">
-          <div class="d-flex bg-white border border" id="addToCart">
-            <span class=" rounded-2 d-block d-lg-none p-2 me-1  " style="width: 50px; size: 50px;" id="calling">
-              <svg id="cals"  xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor"
-                class="bi bi-telephone-fill \" viewBox="0 0 16 16">
+          <div class="w-100 border border-primary bg-white addToCart-div">
+          <div class="d-flex bg-white" id="addToCart">
+            <span class="border border-black rounded-2 d-block d-lg-none p-2 me-1" style="width: 50px; size: 50px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="20" fill="currentColor"
+                class="bi bi-telephone-fill" viewBox="0 0 16 16">
                 <path fill-rule="evenodd"
                   d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
               </svg>
             </span>
-          <!-- <div class=""> -->
-            <button id="addTocart" onclick="addToCart()" type="button" class=" button btn btn-warning w-100  fw-bold text-white  button"
-              style="padding: 12px;"> <span class="cart" style="margin-right: 50px;"> <svg
+          <!-- <a href="" class="w-100"> -->
+            <!-- <div class="modal-dialog modal-xl bg-danger">scbshh</div> -->
+              <button id="addTocart" onclick="addToCarts()" type="button" class=" button btn btn-warning w-100  fw-bold text-white"
+            style="padding: 12px;"> <span class="cart" style="margin-right: 50px;"> <svg
                 xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-dash"
                 viewBox="0 0 16 16">
                 <path d="M6.5 7a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4z" />
                 <path
                   d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
-              </svg></span> ADD TO CART
-            </button>
-          
-          </div>
-        <!-- </div> -->
-        </div>
-
-        <div>
-            <div class="d-flex d-none" id="addedPro">
-              <span onclick="minus()"  class=" p-2 rounded-2 me-3" style="background-color: orange; height: 35px;">
-                <i class="fa-solid fa-minus" style="color: white;"></i>
-
-              </span>
-              <span >
-                <p id="itemTotal">1</p>
-              </span>
-              <span onclick="plus()" class=" p-2 rounded-2  ms-3" style="background-color: orange; height: 35px;">
-                      <i class="fa-solid fa-plus" style="color: white;"></i>
-              </span>
-              <span class="ms-2 mt-1">(1 items added)</span>
-               
+              </svg></span> ADD TO CART</button>
             </div>
-
           <!-- </a> -->
           </div>
           <hr class="border-secondary d-none d-lg-block">
@@ -341,7 +310,7 @@
               in Nigeria for FREE!</a></p>
         </div>
       </div>
-      <div class="mt-3 rounded-2 bg-white p-2 h-auto ms-2 Delivary">
+      <div class="mt-3 rounded-2 bg-white p-2 h-auto w-25 Deliary ms-2 ">
         <p class="fw-bold text-black mt-1">DELIVARY & RETURN</p>
         <hr>
         <p>Choose your location</p>
@@ -402,42 +371,26 @@
 
 
   <script>
-    //  cartIte = JSON.parse(localStorage.getItem("cartItems"))
-    let cartIte =JSON.parse(localStorage.getItem("cartItems"))
-   let accounts = JSON.parse(localStorage.getItem("Details"))   
-
-      let userItems =  cartIte.filter((item, index, array)=> item.email == accounts.Email)
-    for (let index = 0; index < cartIte.length; index++) {
-      counter.innerHTML = userItems.length
-      showCart.innerHTML = userItems.length
-
-    }
-    let allAccount = JSON.parse(localStorage.getItem("Details")) 
-      display.innerHTML = `
-      <p>${allAccount.FirtName}</p>
-      ` 
-      // console.log(allAccount);
+    // counter.innerText=JSON.parse(localStorage.getItem("cartItems")).length
+    console.log();
+    // let allAccount = JSON.parse(localStorage.getItem("Details"))  
     let cartItems = []
-    // if (localStorage.cartItems){
-    //   cartItems = JSON.parse(localStorage.getItem("cartItems"))
-    // }
-    let cartItem =JSON.parse(localStorage.getItem("cartItems"))
-    let userItem =  cartItems.find((item, index, array)=> item.email == account.Email)
-    
-    let account = JSON.parse(localStorage.getItem("Details"))     
-     for (let index = 0; index < userItem; index++) {
-      counter.innerHTML = userItem.length}
-     
-                
-    function  displayCart() {
+    if (localStorage.cartItems){
+      cartItems = JSON.parse(localStorage.getItem("cartItems"))
+    }
+    // console.log(allAccount);
+    // display.innerHTML = `
+    // <p>${allAccount.FirtName}</p>
+    // `
+    const displayCart =() => {
        
         let allAccount = localStorage.getItem("saveItems")
         if (allAccount) {
           let ourValue = JSON.parse(allAccount)
-          // console.log(ourValue)
+          console.log(ourValue)
           img.innerHTML =  ourValue.myImg
-          itemPrice.innerHTML = ourValue.price
           beforePrices.innerHTML = ourValue.beforePrice
+          itemPrice.innerHTML = ourValue.price
           itemName.innerHTML = ourValue.productName
           img.attributes.src.value = ourValue.myImg
         }
@@ -528,62 +481,11 @@
     }
 
 
-    const addToCart = () => {
-  
-      if (allAccount) {
-        let ourCart = JSON.parse(allAccounts)
-          localStorage.setItem("Cart", JSON.stringify(ourCart))
-      }
-      let addNumbes =document.getElementById("itemTotal")
-      itemTotal = addNumbes.textContent
-      newCartItem = JSON.parse(localStorage.getItem("Cart"))     
-      let account = JSON.parse(localStorage.getItem("Details"))   
-      let cartEmail = {
-        email :account.Email,
-      }  
-      let number ={
-        
-        addedTotoal:itemTotal,
-      }
-      let newItem = {...newCartItem, ...cartEmail, ...number}
-     let cartItems = JSON.parse(localStorage.getItem("cartItems"))
-     let isItemInCart = cartItems.find((item) => item.myImg == newItem.myImg && item.email == newItem.email);
-     let reload =document.getElementById("addTocart")
-    //  let reloads =document.getElementById("addTocarts")
-     let added = document.getElementById("addedPro")
-    //  let cals = document.getElementById("calling")
-      let calling = document.getElementById("cals")
-    if (isItemInCart) {
-      reload.style.display ="none"
-      calling.style.display ="none"
-      added.classList.remove('d-none')
-      // cals.classList.remove("d-none")
-      cals.style.display ="none"
-      alert("Product their Already")
-    } else {
-      cals.style.display ="none"
-      added.classList.remove('d-none')
-      console.log("Find the images oooo");
-      cartItems.push(newItem);
-      localStorage.setItem("cartItems", JSON.stringify(cartItems));
-      reload.style.display ="none"
-      alert("Product Added Succesfully")
-    }  
-}
-  const plus = (index)=>{
-   let cartItems =JSON.parse(localStorage.getItem("cartItems"))
-  added.innerText++  
-    
-   }
-    const minus = ()=>{
-            added.innerText  --
+    const addToCarts = () => {
+        alert("Try To Login Befoer Added Product to Cart")
+        window.location.href ="sign-in.html"
     }
-    let allAccounts = localStorage.getItem("saveItems")
-      for (let index = 0; index < cartItems.length; index++) {
-        counter.innerText = cartItems.length
-      }
   </script>
-  
 
 </body>
 
